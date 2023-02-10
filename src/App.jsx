@@ -1,34 +1,49 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import './App.css'
+import { useEffect, useState } from 'react';
+import './App.css';
+import axios from "axios";
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [count, setCount] = useState(0);
+  const [currentTime, setTime] = useState(0);
+
+  useEffect(() => {
+    // make a request to our backend flask server
+    axios.get("/api/time").then((response) => {
+      /**
+       * We expect the server to send us the data in this format:
+       *  {
+       *    "time": 1232131.12321
+       *  }
+       * It's in the response.data object
+       */
+      const time = response.data.time;
+      if (!time) return;
+      // it will be in unix time format. we need to convert it to a human readable format.
+      let unixTimestamp = parseFloat(time);
+      const converted = new Date(unixTimestamp * 1000);
+      setTime(converted.toLocaleTimeString());
+    })
+  }, []);
 
   return (
     <div className="App">
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src="/vite.svg" className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://reactjs.org" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
+      <h1>PhotoShare App Front-End</h1>
       <div className="card">
+        Click the button: 
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}
         </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
       </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      {
+        currentTime ? 
+        <div className='time'>
+          <h2>Current Time: {currentTime}</h2>
+          <p>^ This time information was received from the backend by making a request to <b>/api/time</b>.</p>
+        </div> : 
+        <p>Loading current time...</p>
+      }
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
