@@ -1,7 +1,7 @@
 # photoshare-frontend
 
 ## Steps To Setup
-#### 1. Make sure you have Node.js 14.16.1 or later installed.
+#### 1. Make sure you have Node.js 14.16.1 or newer installed.
 Click [here](https://nodejs.org/en/) to download and install Node.js.
 #### 2. Clone the project like so:
 ```bash
