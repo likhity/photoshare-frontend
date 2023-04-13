@@ -8,11 +8,16 @@
 .logo a {
     padding: 1rem 1.5rem;
     transition: color 200ms ease;
-}
-
-.logo a:hover {
+    transition-property: color, background-color;
+    border: 2px solid var(--accent-color);
     color: white;
     background-color: var(--accent-color);
+}
+
+.logo a:hover, .logo a:focus {
+    color: var(--accent-color);
+    background-color: white;
+    outline: none;
 }
 
 .navBar {
@@ -26,15 +31,15 @@
     color: black;
     padding: 0.65rem 1.125rem;
     border-radius: 0.5rem;
-    /* border: 2px solid white; */
+    border: 2px solid white;
     transition: color 200ms ease;
-    transition-property: color, border;
+    transition-property: color, border, background-color;
     margin-right: 2rem;
     font-weight: 500;
 }
 
 .nav-links a:hover {
-    color: var(--accent-color);
+    border: 2px solid var(--accent-color);
 }
 
 a.sign-in {
