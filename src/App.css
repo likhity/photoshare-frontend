@@ -1,42 +1,47 @@
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+  width: 100%;
+  margin: 0;
+  padding: 1rem 1.5rem;
 }
 
 .logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+    font-weight: 600;
+    font-size: 1.75rem;
+    transition: color 200ms ease;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.logo a {
+    transition: color 200ms ease;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.navBar {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
 }
 
-.card {
-  padding: 2em;
+.nav-links a {
+    color: black;
+    padding: 0.65rem 1.125rem;
+    border-radius: 0.5rem;
+    border: 1px solid white;
+    transition: color 200ms ease;
+    transition-property: color, border;
 }
 
-.read-the-docs {
-  color: #888;
+.nav-links a:not(:last-child) {
+    margin-right: 2rem;
+}
+
+a.sign-in {
+    border: 2px solid var(--accent-color);
+    background-color: var(--accent-color);
+    font-weight: 500;
+    color: white;
+}
+
+a.sign-in:hover {
+    background-color: #fff;
+    color: var(--accent-color);
 }
