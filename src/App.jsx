@@ -1,12 +1,13 @@
-import { useEffect, useState } from 'react';
+import React from 'react';
 import './App.css';
-import axios from "axios";
+import { Outlet } from 'react-router-dom';
 import NavBar from './components/navbar';
 
 function App() {
   return (
     <>
         <NavBar />
+        <Outlet />
     </>
   );
 }

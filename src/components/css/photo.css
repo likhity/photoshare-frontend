@@ -1,0 +1,24 @@
+.photo {
+    width: 350px;
+    height: 350px;
+    border-radius: 0.25rem;
+    object-fit: cover;
+    transition: filter 100ms ease;
+}
+
+.photo:hover {
+    filter: brightness(50%);
+}
+
+.caption {
+    text-align: center;
+    margin: 0;
+    position: relative;
+    bottom: 55px;
+    color: white;
+    background-color: #333333aa;
+}
+
+.photo-link {
+    height: 350px;
+}

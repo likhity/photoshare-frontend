@@ -1,0 +1,49 @@
+.logo {
+    font-weight: 800;
+    padding: 0.75rem 0;
+    font-size: 1.75rem;
+    transition: color 200ms ease;
+}
+
+.logo a {
+    padding: 1rem 1.5rem;
+    transition: color 200ms ease;
+}
+
+.logo a:hover {
+    color: white;
+    background-color: var(--accent-color);
+}
+
+.navBar {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-links a {
+    color: black;
+    padding: 0.65rem 1.125rem;
+    border-radius: 0.5rem;
+    /* border: 2px solid white; */
+    transition: color 200ms ease;
+    transition-property: color, border;
+    margin-right: 2rem;
+    font-weight: 500;
+}
+
+.nav-links a:hover {
+    color: var(--accent-color);
+}
+
+a.sign-in {
+    border: 2px solid var(--accent-color);
+    background-color: var(--accent-color);
+    font-weight: 500;
+    color: white;
+}
+
+a.sign-in:hover {
+    background-color: #fff;
+}

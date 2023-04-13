@@ -1,6 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App';
+import FrontPage from './routes/front-page';
 import './index.css'
 import {
     createBrowserRouter,
@@ -10,7 +11,13 @@ import {
 const router = createBrowserRouter([
     {
         path: "/",
-        element: <App />
+        element: <App />,
+        children: [
+            {
+                path: "/",
+                element: <FrontPage />
+            }
+        ]
     }
 ]);
 
