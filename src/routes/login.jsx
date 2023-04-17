@@ -35,7 +35,7 @@ export default function LoginPage() {
                 <form className='login-form' onSubmit={submitHandler}>
                     {
                         error
-                        ? <p className="error">Either your email or password is incorrect.</p>
+                        ? <p className="login-error">Either your email or password is incorrect.</p>
                         : <></>
                     }
                     <label htmlFor="email">Email</label>
