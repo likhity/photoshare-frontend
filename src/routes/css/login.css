@@ -35,6 +35,10 @@
     padding: 0.4rem 1.5rem;
 }
 
+.login-error {
+    color: red;
+}
+
 .new-here {
     margin-top: 10rem;
 }
