@@ -1,12 +1,14 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import App from './App';
-import FrontPage from './routes/front-page';
 import './index.css'
 import {
     createBrowserRouter,
     RouterProvider
 } from "react-router-dom";
+
+import App from './App';
+import FrontPage from './routes/front-page';
+import LoginPage from './routes/login';
 
 const router = createBrowserRouter([
     {
@@ -16,6 +18,10 @@ const router = createBrowserRouter([
             {
                 path: "/",
                 element: <FrontPage />
+            },
+            {
+                path: "login",
+                element: <LoginPage />
             }
         ]
     }

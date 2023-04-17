@@ -1,0 +1,44 @@
+
+.login-page .container {
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.login-page h1 {
+    font-size: 1.75rem;
+    font-weight: bold;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 7rem;
+}
+
+.login-form input {
+    width: 350px;
+}
+
+.login-form .password {
+    margin-top: 1rem;
+}
+
+.login-form label {
+    align-self: flex-start;
+}
+
+.login-form button {
+    margin-top: 1.5rem;
+    padding: 0.4rem 1.5rem;
+}
+
+.new-here {
+    margin-top: 10rem;
+}
+
+.new-here a {
+    font-weight: bold;
+}
