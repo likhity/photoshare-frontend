@@ -51,4 +51,17 @@ a.sign-in {
 
 a.sign-in:hover {
     background-color: #fff;
+    color: var(--accent-color);
+}
+
+a.upload {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    color: var(--accent-color);
+}
+
+a.upload:hover {
+    background-color: var(--accent-color);
+    color: white;
 }

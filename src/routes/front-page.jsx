@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import "./css/front-page.css";
 import axios from 'axios';
 import { Link, useSearchParams } from 'react-router-dom';
+
 import PhotoGrid from '../components/photogrid';
 import LoadingPhotoGrid from '../components/fakephotogrid';
 
