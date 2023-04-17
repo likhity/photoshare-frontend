@@ -16,8 +16,8 @@ export function getUser() {
     }
 }
 
-export function logOut() {
-    axios.get("/api/logout").then((response) => {
-        localStorage.removeItem("PHOTOSHARE_USER");
-    })
+export async function logOut() {
+    const response = await axios.get("/api/logout");
+    localStorage.removeItem("PHOTOSHARE_USER");
+    window.location = "/";
 }
