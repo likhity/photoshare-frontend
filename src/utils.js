@@ -1,3 +1,4 @@
+import axios from "axios";
 
 export function getUser() {
     const user = JSON.parse(localStorage.getItem("PHOTOSHARE_USER"));
@@ -13,4 +14,10 @@ export function getUser() {
         localStorage.removeItem("PHOTOSHARE_USER");
         return null;
     }
+}
+
+export function logOut() {
+    axios.get("/api/logout").then((response) => {
+        localStorage.removeItem("PHOTOSHARE_USER");
+    })
 }

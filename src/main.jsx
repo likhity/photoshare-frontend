@@ -9,6 +9,7 @@ import {
 import App from './App';
 import FrontPage from './routes/front-page';
 import LoginPage from './routes/login';
+import LogOut from "./routes/logout";
 
 const router = createBrowserRouter([
     {
@@ -22,6 +23,10 @@ const router = createBrowserRouter([
             {
                 path: "login",
                 element: <LoginPage />
+            },
+            {
+                path: "logout",
+                element: <LogOut />
             }
         ]
     }
