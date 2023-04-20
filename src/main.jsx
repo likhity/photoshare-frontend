@@ -10,6 +10,7 @@ import App from './App';
 import FrontPage from './routes/front-page';
 import LoginPage from './routes/login';
 import LogOut from "./routes/logout";
+import UploadPage from './routes/upload';
 
 const router = createBrowserRouter([
     {
@@ -17,7 +18,7 @@ const router = createBrowserRouter([
         element: <App />,
         children: [
             {
-                path: "/",
+                path: "",
                 element: <FrontPage />
             },
             {
@@ -27,6 +28,10 @@ const router = createBrowserRouter([
             {
                 path: "logout",
                 element: <LogOut />
+            },
+            {
+                path: "upload",
+                element: <UploadPage />
             }
         ]
     }
