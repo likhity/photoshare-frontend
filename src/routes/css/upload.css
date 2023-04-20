@@ -1,0 +1,122 @@
+.upload-page {
+    display: flex;
+    height: 80%;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+}
+
+.upload-details {
+    display: flex;
+    width: 300px;
+    /* width: min-content; */
+    flex-direction: column;
+    align-items: center;
+}
+
+.upload-details label {
+    align-self: flex-start;
+}
+
+.upload-details input, .upload-details select {
+    align-self: flex-start;
+    width: 100%;    
+}
+
+.upload-details label:not(:first-child) {
+    margin-top: 5px;
+}
+
+.upload-details .tags {
+    width: 100%;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    margin-bottom: 5px;
+}
+
+.upload-page .error {
+    align-self: flex-start;
+    font-size: 0.8rem;
+}
+
+.btn-post {
+    width: min-content;
+    padding-right: 2rem;
+    padding-left: 2rem;
+    margin-top: 1.5rem;
+}
+
+.upload-button {
+    background-color: var(--box-background-color);
+    --button-size: 300px;
+    /* padding: 4rem; */
+    width: var(--button-size);
+    height: var(--button-size);
+    border-radius: 1rem;
+    color: #888;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 200ms ease;
+}
+
+.upload-button:hover {
+    background-color: var(--accent-color);
+    color: white;
+}
+
+.upload-button span:first-of-type {
+    margin-top: 3rem;
+}
+
+.upload-button span {
+    font-size: 0.9rem;
+}
+
+.upload-icon {
+    font-size: 6rem;
+    color: #bbb;
+    transition: color 200ms ease;
+}
+
+.upload-button:hover .upload-icon {
+    color: white;
+}
+
+.file-name {
+    font-size: 0.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    margin-bottom: 0;
+    font-weight: 500;
+}
+
+.file-name svg {
+    color: var(--accent-color);
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.image-preview {
+    position: relative;
+}
+
+.image-preview img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+}
+
+.image-preview button {
+    width: 50px;
+    height: 50px;
+    padding: 0;
+    font-size: 2rem;
+    position: absolute;
+    right: -25px;
+    top: -25px;
+}
