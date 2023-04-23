@@ -1,35 +1,18 @@
-.container {
+.box-container {
     display: flex;
     justify-content: space-between;
   }
   
-  .grid-section {
+  .box {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
     width: 45%;
   }
   
-  .grid-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 10px;
-  }
-  
-  .grid-item {
-    border: 1px solid #ccc;
-    padding: 10px;
-  }
-  
-  .list-section {
-    width: 45%;
-  }
-  
-  .list-container {
-    list-style-type: none;
-    padding: 0;
-  }
-  
-  .list-item {
-    border: 1px solid #ccc;
-    padding: 10px;
-    margin-bottom: 10px;
+  .box:not(:last-child) {
+    margin-right: 20px;
   }
   
