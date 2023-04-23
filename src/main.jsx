@@ -14,6 +14,7 @@ import UploadPage from './routes/upload';
 import SignupPage from './routes/signup';
 import User from './routes/user';
 import UserPhotos from './routes/user-photos';
+import UserFriends from './routes/user-friends';
 import Popular from './routes/popular';
 import Albums from './routes/albums';
 
@@ -53,6 +54,10 @@ const router = createBrowserRouter([
                     {
                         path: "albums",
                         element: <Albums />
+                    },
+                    {
+                        path: "friends",
+                        element: <UserFriends />
                     }
                 ]
             },

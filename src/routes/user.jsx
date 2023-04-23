@@ -21,7 +21,7 @@ export default function User() {
             const data = response.data;
             setUserData(data);
         })
-    }, []);
+    }, [params.userId]);
 
     return (
         <div className='user-page'>

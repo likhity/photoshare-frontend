@@ -1,0 +1,122 @@
+
+.user-friends {
+    margin-top: 1rem;
+    display: flex;
+    gap: 5rem;
+    position: relative;
+    left: 500px;
+    justify-content: space-between;
+}
+
+.my-friends .header h3, .my-friends .header p {
+    margin: 0;
+}
+
+.my-friends .header {
+    display: flex;
+    align-items: flex-end;
+    gap: 15rem;
+}
+
+.my-friends .header p {
+    font-size: 1.1rem;
+    color: #aaa;
+}
+
+.friends-list {
+    margin-top: 0.75rem;
+}
+
+.friends-list ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.friends-list li {
+    width: 100%;
+    position: relative;
+    margin-bottom: 0.5rem;
+}
+
+.friends-list a {
+    color: black;
+    font-size: 1.1rem;
+}
+
+.friends-list .user-id {
+    font-size: 1rem;
+    color: var(--accent-color-hover);
+    font-weight: 500;
+}
+
+.friends-list .date {
+    position: absolute;
+    right: 0;
+    color: #999;
+}
+
+.find-friends {
+    background-color: var(--box-background-color);
+    padding: 1rem;
+    width: 300px;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.find-friends input {
+    width: 90%;
+}
+
+.find-friends .searched-friend {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.find-friends .searched-friend:not(:last-child) {
+    margin-bottom: 0.35rem;
+}
+
+.find-friends .searched-friend:first-of-type {
+    margin-top: 0.75rem;
+}
+
+.searched-friend .user-id {
+    color: var(--accent-color-hover);
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.suggested-friends {
+    margin-top: 1.5rem;
+    background-color: var(--box-background-color);
+    padding: 1.5rem;
+    border-radius: 1rem;
+}
+
+.suggested-friends h3 {
+    margin: 0;
+    margin-bottom: 0.5rem;
+    font-size: 1.35rem;
+}
+
+.suggested-friend:not(:last-child) {
+    margin-bottom: 0.35rem;
+}
+
+.suggested-friends .suggested-friend {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.suggested-friend .user-id {
+    color: var(--accent-color-hover);
+    font-size: 1rem;
+    font-weight: 500;
+}
