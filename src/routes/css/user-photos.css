@@ -1,0 +1,31 @@
+
+.user-photos {
+    margin-top: 1rem;
+}
+
+.user-photos .photo-grid {
+    grid-template-columns: repeat(3, 300px);
+}
+
+.user-photos .photo-link {
+    height: 300px;
+}
+
+.user-photos .photo {
+    width: 300px;   
+    height: 300px;   
+}
+
+.user-photos .fake-photo-grid {
+    grid-template-columns: repeat(3, 300px);
+}
+
+.user-photos .fake-photo {
+    width: 300px;   
+    height: 300px;   
+}
+
+.user-photos input {
+    font-size: 0.9rem;
+    height: 40px;
+}

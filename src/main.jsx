@@ -12,6 +12,8 @@ import LoginPage from './routes/login';
 import LogOut from "./routes/logout";
 import UploadPage from './routes/upload';
 import SignupPage from './routes/signup';
+import User from './routes/user';
+import UserPhotos from './routes/user-photos';
 
 const router = createBrowserRouter([
     {
@@ -37,6 +39,16 @@ const router = createBrowserRouter([
             {
                 path:"signup",
                 element: <SignupPage />
+            },
+            {
+                path: "u/:userId",
+                element: <User />,
+                children: [
+                    {
+                        path: "",
+                        element: <UserPhotos />
+                    }
+                ]
             }
         ]
     }
