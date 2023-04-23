@@ -21,9 +21,10 @@ a {
   text-decoration: inherit;
   margin: 0;
   padding: 0;
+  transition: color 250ms ease;
 }
 a:hover {
-    color: var(--accent-color);
+    color: var(--accent-color-hover);
 }
 
 body {
