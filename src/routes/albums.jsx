@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
-import { useParams, useSearchParams, Link } from 'react-router-dom';
+import { useParams, Link } from 'react-router-dom';
 import axios from "axios";
+
+import "./css/user-albums.css";
 
 function AlbumList({ userId }) {
   const [albums, setAlbums] = useState([]);
@@ -14,7 +16,7 @@ function AlbumList({ userId }) {
   }, [params.userId]);
 
   return (
-    <div>
+    <div className="user-albums">
       <h1>Albums</h1>
       <ul>
         {albums.map((album) => (
