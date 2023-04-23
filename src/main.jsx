@@ -11,6 +11,7 @@ import FrontPage from './routes/front-page';
 import LoginPage from './routes/login';
 import LogOut from "./routes/logout";
 import UploadPage from './routes/upload';
+import SignupPage from './routes/signup';
 
 const router = createBrowserRouter([
     {
@@ -32,6 +33,10 @@ const router = createBrowserRouter([
             {
                 path: "upload",
                 element: <UploadPage />
+            },
+            {
+                path:"signup",
+                element: <SignupPage />
             }
         ]
     }
