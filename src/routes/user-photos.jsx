@@ -27,7 +27,7 @@ export default function UserPhotos() {
                 setPhotos(response.data);
             });
         }
-    }, [tags]);
+    }, [tags, params.userId]);
 
     return (
     <div className='user-photos'>
