@@ -15,6 +15,7 @@ import SignupPage from './routes/signup';
 import User from './routes/user';
 import UserPhotos from './routes/user-photos';
 import Popular from './routes/popular';
+import Albums from './routes/albums';
 
 const router = createBrowserRouter([
     {
@@ -48,6 +49,10 @@ const router = createBrowserRouter([
                     {
                         path: "",
                         element: <UserPhotos />
+                    },
+                    {
+                        path: "albums",
+                        element: <Albums />
                     }
                 ]
             },
