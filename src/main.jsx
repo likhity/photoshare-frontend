@@ -11,9 +11,11 @@ import FrontPage from './routes/front-page';
 import LoginPage from './routes/login';
 import LogOut from "./routes/logout";
 import UploadPage from './routes/upload';
+import SignupPage from './routes/signup';
 import User from './routes/user';
 import UserPhotos from './routes/user-photos';
 import UserFriends from './routes/user-friends';
+import Popular from './routes/popular';
 
 const router = createBrowserRouter([
     {
@@ -37,6 +39,10 @@ const router = createBrowserRouter([
                 element: <UploadPage />
             },
             {
+                path:"signup",
+                element: <SignupPage />
+            },
+            {
                 path: "u/:userId",
                 element: <User />,
                 children: [
@@ -49,6 +55,10 @@ const router = createBrowserRouter([
                         element: <UserFriends />
                     }
                 ]
+            },
+            {
+                path: "popular",
+                element: <Popular />
             }
         ]
     }
