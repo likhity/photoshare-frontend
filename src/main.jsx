@@ -11,6 +11,7 @@ import FrontPage from './routes/front-page';
 import LoginPage from './routes/login';
 import LogOut from "./routes/logout";
 import UploadPage from './routes/upload';
+import SignupPage from './routes/signup';
 import User from './routes/user';
 import UserPhotos from './routes/user-photos';
 
@@ -34,6 +35,10 @@ const router = createBrowserRouter([
             {
                 path: "upload",
                 element: <UploadPage />
+            },
+            {
+                path:"signup",
+                element: <SignupPage />
             },
             {
                 path: "u/:userId",
