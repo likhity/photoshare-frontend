@@ -18,6 +18,7 @@ import UserFriends from './routes/user-friends';
 import Popular from './routes/popular';
 import Albums from './routes/albums';
 import PhotoPage from './routes/photo-page';
+import IndividualAlbum from './routes/individual-album'
 
 const router = createBrowserRouter([
     {
@@ -59,6 +60,10 @@ const router = createBrowserRouter([
                     {
                         path: "friends",
                         element: <UserFriends />
+                    },
+                    {
+                        path: "albums/:albumName",
+                        element: <IndividualAlbum />
                     }
                 ]
             },
