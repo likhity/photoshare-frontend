@@ -25,3 +25,19 @@
     width: 300px;   
     height: 300px;   
 }
+
+.individual-album .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.individual-album .header h2 {
+    font-size: 2rem;
+}
+
+.individual-album .header .delete-album {
+    height: 40px;
+    background-color: #e24242;
+    border: none;
+}
