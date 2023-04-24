@@ -1,0 +1,27 @@
+
+.individual-album {
+    position: relative;
+    left: 400px;
+}
+
+.individual-album .photo-grid {
+    grid-template-columns: repeat(3, 300px);
+}
+
+.individual-album .photo-link {
+    height: 300px;
+}
+
+.individual-album .photo {
+    width: 300px;   
+    height: 300px;   
+}
+
+.individual-album .fake-photo-grid {
+    grid-template-columns: repeat(3, 300px);
+}
+
+.individual-album .fake-photo {
+    width: 300px;   
+    height: 300px;   
+}
