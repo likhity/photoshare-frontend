@@ -1,0 +1,153 @@
+.photo-page {
+    display: flex;
+    gap: 5rem;
+    height: 80%;
+    align-items: center;
+}
+
+.photo-view {
+    margin-left: 5rem;
+}
+
+.photo-view .photo {
+    width: 500px;
+    max-height: 500px;
+    height: unset;
+    object-fit: cover;
+}
+
+.photo-view .caption {
+    bottom: 100px;
+}
+
+.photo-view .tags {
+    position: relative;
+    bottom: 70px;
+    left: 10px;
+}
+
+.photo-view .tags .tag {
+    cursor: pointer;
+}
+
+.photo-page .right-side {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 45%;
+}
+
+.photo-page .right-side .wrapper {
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.photo-page .right-side h3 {
+    font-size: 1.75rem;
+    margin: 0;
+    font-weight: 800;
+}
+
+.photo-page .right-side h3 a {
+    color: black;
+}
+
+.photo-page .right-side h3 a:hover {
+    color: var(--accent-color-hover);
+}
+
+.photo-page .right-side .user-id {
+    font-size: inherit;
+    margin: 0;
+    color: var(--accent-color-hover);
+    font-weight: 500;
+}
+
+.photo-page .right-side .upload-date {
+    margin: 0;
+    color: #aaa;
+    margin-bottom: 1.25rem;
+}
+
+.comments-section {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+}
+
+.comments {
+    overflow-y: auto;
+    height: 350px;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+.search-comments {
+    align-self: flex-end;
+}
+
+.comment .user-and-date {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.comment .date {
+    color: #aaa;
+    font-size: 0.8rem;
+}
+
+.comment a {
+    color: gray;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.comment a:hover {
+    color: var(--accent-color);
+}
+
+.comment .comment-text {
+    margin: 0;
+    margin-bottom: 1.05rem;
+}
+
+.like-and-comment {
+    display: flex;
+    align-items: flex-end;
+    gap: 1rem;
+}
+
+.like {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.like svg {
+    font-size: 2.1rem;
+}
+
+.like-button {
+    border-radius: 0;
+    padding: 0;
+    background-color: transparent;
+    color: #aaa;
+    border: none;
+}
+
+.like-button.liked {
+    color: var(--accent-color);
+}
+
+.like .num-likes {
+    color: #444;
+    font-size: 1.15rem;
+}
+
+.like-and-comment input {
+    width: 100%;
+    height: 30px;
+}
