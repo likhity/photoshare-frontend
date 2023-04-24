@@ -17,6 +17,7 @@ import UserPhotos from './routes/user-photos';
 import UserFriends from './routes/user-friends';
 import Popular from './routes/popular';
 import Albums from './routes/albums';
+import PhotoPage from './routes/photo-page';
 
 const router = createBrowserRouter([
     {
@@ -64,6 +65,10 @@ const router = createBrowserRouter([
             {
                 path: "popular",
                 element: <Popular />
+            },
+            {
+                path: "p/:photoId",
+                element: <PhotoPage />
             }
         ]
     }
